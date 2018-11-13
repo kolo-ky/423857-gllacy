@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Александр Колосовский](https://up.htmlacademy.ru/htmlcss/23/user/423857).
-* Наставник: [Дмитрий Батманов](hhttps://up.htmlacademy.ru/htmlcss/23/user/10964)
+* Наставник: [Дмитрий Батманов](https://up.htmlacademy.ru/htmlcss/23/user/10964)
 
 ---
 
