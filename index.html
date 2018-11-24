@@ -22,7 +22,7 @@
                 <a href="#" class="sub-menu__link">Сливочное</a>
               </li>
               <li class="sub-menu__item active">
-                <a href="#" class="sub-menu__link sub-menu__link--active">Щербеты</a>
+                <a href="#" class="sub-menu__link sub-menu__link">Щербеты</a>
               </li>
               <li class="sub-menu__item">
                 <a href="#" class="sub-menu__link">Фруктовый лед</a>
@@ -41,15 +41,109 @@
         </ul>
 
         <div class="control-elements">
-          <button class="control-elements__button-search control-elements__button-search--active">Поиск</button>
+          <div class="search-wrap">
+            <button class="control-elements__button-search control-elements__button-search">Поиск</button>
 
-          <ul class="user-menu">
-            <li class="user-menu__item">
-              <a href="#" class="user-menu__login user-menu__login--active">Вход</a> 
-            </li>
-          </ul>
-  
-          <a href="#" class="control-elements__cart">Пусто</a>
+            <div class="search-form">
+              <h2 class="visually-hidden">Поиск по сайту</h2>
+              <form action="https://echo.htmlacademy.ru" name="search" type="get">
+                <p class="search-form__item">
+                  <label for="search-field" class="visually-hidden">Поле поиска</label>
+                  <input type="text" id="search-field" name="search-field" class="search-form__input" placeholder="Что ищем?">
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <div class="user-wrap">
+            <ul class="user-menu">
+              <li class="user-menu__item">
+                <a href="#" class="user-menu__login user-menu__login">Вход</a> 
+              </li>
+             </ul>
+
+            <div class="login-form">
+              <h2 class="visually-hidden">Форма входа на сайт</h2>
+              <form action="https://echo.htmlacademy.ru" type="post" name="login">
+                <p class="user-form__item">
+                  <label for="user-mail" class="visually-hidden">Ваша электронная почта</label>
+                  <input type="text" id="user-mail" name="mail" class="login-form__input" placeholder="Электронная почта">
+                </p>
+                
+                <p class="user-form__item">
+                  <label for="user-password" class="visually-hidden">Ваш пароль</label>
+                  <input type="password" id="user-password" name="password" class="login-form__input" placeholder="Пароль">
+                </p>
+        
+                <p class="user-form__item">
+                  <button type="submit" class="user-form__button">Войти</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        
+          <div class="cart-wrap">
+            <a href="#" class="control-elements__cart">Пусто</a>
+
+            <div class="cart-card">
+              <h2 class="visually-hidden">Купленные товары</h2>
+              
+              <table class="cart-table">
+                <tr class="cart-table__item">
+                  <td>
+                    <button type="button" class="cart-table__close-button">Удалить</button>
+                  </td>
+                  <td>
+                    <img src="img/cream-with-orange-jam.jpg" class="cart-table__image" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="25" height="25">
+                  </td>
+                  <td>
+                    <span class="cart-table__title">
+                      Сливочное с апельсиновым джемом и цитрусовой стружкой
+                    </span>
+                  </td>
+                  <td>
+                    <span class="cart-table__weight">
+                      1,5 кг
+                    </span>
+                    <span class="cart-table__price">
+                      200 руб
+                    </span>
+                  </td>
+                  <td>
+                    <span class="cart-table__row-price">
+                      300 руб
+                    </span>
+                  </td>
+                </tr>
+                <tr class="cart-table__item">
+                  <td>
+                    <button type="button" class="cart-table__close-button">Удалить</button>
+                  </td>
+                  <td>
+                    <img src="img/creamy-strawberry-with-white-chocolate.jpg" class="cart-table__image" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="25" height="25">
+                  </td>
+                  <td>
+                    <span class="cart-table__title">
+                      Сливочно-клубничное с присыпкой из белого шоколада
+                    </span>
+                  </td>
+                  <td>
+                    <span class="cart-table__weight">
+                      1,5 кг
+                    </span>
+                    <span class="cart-table__price">
+                      300 руб
+                    </span>
+                  </td>
+                  <td>
+                    <span class="cart-table__row-price">
+                      400 руб
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </nav>
 
@@ -188,7 +282,7 @@
         </p>
         <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
           <label for="subscribe-mail" class="visually-hidden">Ваша эелектронная почта</label>
-          <input type="text" name="subscribe-mail" id="subscribe-mail" class="subscribe__mail" placeholder="Электронная почта">
+          <input type="email" name="subscribe-mail" id="subscribe-mail" class="subscribe__mail" placeholder="Электронная почта">
           <button type="submit" class="subscribe__button">Отправить</button>
         </form>
       </section>
@@ -284,35 +378,6 @@
         </p>
       </form>
       <button type="button" class="feedback-form__close-button">Закрыть</button>
-    </div>
-
-    <div class="search-form">
-      <h2 class="visually-hidden">Поиск по сайту</h2>
-      <form action="https://echo.htmlacademy.ru" name="search" type="get">
-        <p class="search-form__item">
-          <label for="search-field" class="visually-hidden">Поле поиска</label>
-          <input type="text" id="search-field" name="search-field" class="search-form__input" placeholder="Что ищем?">
-        </p>
-      </form>
-    </div>
-
-    <div class="login-form">
-      <h2 class="visually-hidden">Форма входа на сайт</h2>
-      <form action="https://echo.htmlacademy.ru" type="post" name="login">
-        <p class="user-form__item">
-          <label for="user-mail" class="visually-hidden">Ваша электронная почта</label>
-          <input type="text" id="user-mail" name="mail" class="login-form__input" placeholder="Электронная почта">
-        </p>
-        
-        <p class="user-form__item">
-          <label for="user-password" class="visually-hidden">Ваш пароль</label>
-          <input type="password" id="user-password" name="password" class="login-form__input" placeholder="Пароль">
-        </p>
-
-        <p class="user-form__item">
-          <button type="submit" class="user-form__button">Войти</button>
-        </p>
-      </form>
     </div>
   </body>
 </html>
