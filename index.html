@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a>
-          <img src="img/logo.svg" alt="Логотип магазина Глэйси" class="logo-image" width="150" height="80">
+          <img src="img/logo.svg" class="logo-image" alt="Логотип магазина Глэйси" width="150" height="80">
         </a>
 
         <ul class="main-menu">
@@ -40,55 +40,53 @@
           </li>
         </ul>
 
-        <div class="control-elements">
-          <div class="search-wrap">
-            <button class="control-elements__button-search">Поиск</button>
+        <div class="main-navigation__control-nav">
+          <div class="search">
+            <button class="search__btn">Поиск</button>
 
-            <div class="search-modal">
-              <h2 class="visually-hidden">Поиск по сайту</h2>
+            <div class="search__modal" area-label="Поиск по сайту">
               <form action="https://echo.htmlacademy.ru" name="search" type="get">
-                <p class="search-modal__item">
+                <p class="search__input-wrapper">
                   <label for="search-field" class="visually-hidden">Поле поиска</label>
-                  <input type="text" id="search-field" name="search-field" class="search-modal__input" placeholder="Что ищем?">
+                  <input type="text" id="search-field" name="search-field" class="search__input" placeholder="Что ищем?">
                 </p>
               </form>
             </div>
           </div>
 
-          <div class="user-wrap">
-            <ul class="user-menu">
-              <li class="user-menu__item">
-                <a href="#" class="user-menu__login">Вход</a> 
+          <div class="user">
+            <ul class="user__menu">
+              <li class="user__menu-item">
+                <a href="#" class="user__menu-link">Вход</a> 
               </li>
             </ul>
 
-            <div class="login-modal">
-              <h2 class="visually-hidden">Форма входа на сайт</h2>
+            <div class="user__modal" area-label="Форма входа на сайт">
               <form action="https://echo.htmlacademy.ru" type="post" name="login">
-                <p class="login-modal__item">
+                <p class="user__input-wrapper">
                   <label for="user-mail" class="visually-hidden">Ваша электронная почта</label>
-                  <input type="email" id="user-mail" name="mail" class="login-modal__input" placeholder="Электронная почта">
+                  <input type="email" id="user-mail" name="mail" class="user__input" placeholder="Электронная почта">
                 </p>
                 
-                <p class="login-modal__item">
+                <p class="user__input-wrapper">
                   <label for="user-password" class="visually-hidden">Ваш пароль</label>
-                  <input type="password" id="user-password" name="password" class="login-modal__input" placeholder="Пароль">
+                  <input type="password" id="user-password" name="password" class="user__input" placeholder="Пароль">
                 </p>
         
-                <p class="login-modal__item">
-                  <button type="submit" class="login-modal__button">Войти</button>
+                <p cclass="user__btn-wrapper">
+                  <button type="submit" class="btn">Войти</button>
                 </p>
               </form>
 
-              <p class="login-modal__options">
-                <a href="#" class="login-modal__remember-link">Забыли пароль?</a>
-                <a href="#" lass="login-modal__registration-link">Новая регистрация</a>
+              <p class="user__login-options">
+                <a href="#" class="link">Забыли пароль?</a>
+                <a href="#" lass="link">Новая регистрация</a>
               </p>
             </div>
           </div>
     
-          <div class="cart-wrap">
-            <a  href="#" class="control-elements__cart">Пусто</a>
+          <div class="cart">
+            <a  href="#" class="cart__btn">Пусто</a>
           </div>
         </div>
       </nav>
