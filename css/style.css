@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+
+  background-color: #849d8f;
+}
+a {
+  text-decoration: none;
+}
+.main-menu{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #849d8f
+}
+
+.main-menu .main-menu__item,
+.sub-menu .sub-menu__item{
+  list-style: none;
+}
+
+.main-menu  .main-menu__item .main-menu__link{
+  color: #ffffff;
+}
+
+.main-menu .main-menu__item .main-menu__link:hover,
+.main-menu .main-menu__item .main-menu__link:focus{
+  outline: none;
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.sub-menu{
+  background-color: #ffffff;
+  text-align: center;
+}
+.sub-menu .sub-menu__item-novelty{
+  list-style: none;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+
+  border-bottom: 1px solid rgba(50,50,50, 0.2);
+}
+
+.sub-menu .sub-menu__item .sub-menu__link{
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-menu .sub-menu__item .sub-menu__link:hover,
+.main-menu .sub-menu__item .sub-menu__link:focus{
+  outline: none;
+  background-color: #fbded7;
+}
+
+.header-btn{
+  outline: none;
+  font: inherit;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.header-btn:hover,
+.header-btn:focus{
+  background-color: rgba(255, 255, 255);
+  color: #323232
+}
+
+.search .search__btn{
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.user__menu .user__menu-item {
+  list-style: none;
+}
+
+.advantages{
+  width: 1148px;
+  height: 306px;
+  padding: 15px;
+  background-image: url(../img/wafer.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #323232;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.advantages h1{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.advantages .advantages__list .advantages__item{
+  list-style: none;
+}
+
+.advantages .advantages__list{
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog-preview{
+  background-color: #ffffff;
+  background-image: url(../img/strawberry.jpg);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
+  border-radius: 20px;
+  padding: 15px;
+  box-sizing: border-box
+}
+
+.blog-preview .blog-preview__subtitle{
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: underline;
+}
+
+.blog-preview .blog-preview__title{
+  color: #323232;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.subscribe{
+  background-color: #f8f7f4;
+  background-image: url(../img/mail-background.jpg);
+  background-repeat: no-repeat;
+  padding: 5px;
+  color: #323232;
+  width: 560px;
+  height: 220px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.subscribe .subscribe-wrap{
+  background-color: #f8f7f4;
+  border-radius: 20px;
+}
+
+.subscribe .description{
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.btn{
+  outline: none;
+  font: inherit;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #e94e37;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 8px 20px 9px 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn:hover,
+.btn:focus{
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: #ee7561
+}
+
+.btn:active{
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+
+.social-list .social-list__item{
+  list-style: none;
+}
+
+.social-list .social-list__link{
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.social-list .social-list__link:hover,
+.social-list .social-list__link:focus{
+  background-color: #ffffff;
+}
+
+.tech-info-menu .tech-info-menu__item{
+  list-style: none;
+}
+
+.tech-info-menu .tech-info-menu__link{
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.tech-info-menu .tech-info-menu__link:hover,
+.tech-info-menu .tech-info-menu__link:focus{
+  color: #ffbc9e;
+}
+
+.creater-info .copyright,
+.copyright .copyright__link{
+  color: #fefefe;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.copyright .copyright__link:hover,
+.copyright .copyright__link:focus{
+  color: #ffbc9e;
+}
+
+.contacts{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.contacts .contacts__phone{
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts .contacts__phone:hover,
+.contacts .contacts__phone:focus{
+  color: #ffbc9e;
+}
+
+.breadcrumbs-list .breadcrumbs-list__item{
+  list-style: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs-list .breadcrumbs-list__link{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs-list .breadcrumbs-list__link:hover,
+.cbreadcrumbs-list .breadcrumbs-list__link:focus{
+  color: #ffbc9e;
+}
+
+.catalog-list .catalog-list__item{
+  list-style: none;
+}
+
+.catalog-list .catalog-list__item .item-image{
+  border-radius: 50%;
+}
+
+.catalog-list .catalog-list__item .item-price{
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.catalog-list .catalog-list__item .catalog-list__weight{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.catalog-list .catalog-list__item .item-title__link{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.catalog-list .catalog-list__item .item-title__link:hover,
+.catalog-list .catalog-list__item .item-title__link:focus{
+  color: #ffbc9e;
+}
+
+.search__modal,
+.user__modal,
+.cart__modal,
+.feedback-form{
+  display: none;
+}

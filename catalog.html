@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Глейси - каталог</title>
   </head>
   <body>
@@ -14,9 +17,9 @@
         <ul class="main-menu">
           <li class="main-menu__item">
             <a href="catalog.html" class="main-menu__link">Каталог</a>
-            <ul class="sub-menu visually-hidden">
-              <li class="sub-menu__item">
-                <a href="#" class="sub-menu__link">Новинки</a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item-novelty">
+                Новинки
               </li>
               <li class="sub-menu__item">
                 <a href="#" class="sub-menu__link">Сливочное</a>
@@ -42,7 +45,7 @@
   
         <div class="main-navigation__control-nav">
           <div class="search">
-            <button class="search__btn">Поиск</button>
+            <button class="header-btn search__btn">Поиск</button>
 
             <div class="search__modal" area-label="Поиск по сайту">
               <form action="https://echo.htmlacademy.ru" name="search" type="get">
@@ -57,7 +60,7 @@
           <div class="user">
             <ul class="user__menu">
               <li class="user__menu-item">
-                <a href="#" class="user__menu-link">Вход</a> 
+                <a href="#" class="header-btn user__menu-link">Вход</a> 
               </li>
             </ul>
 
@@ -86,7 +89,7 @@
           </div>
     
           <div class="cart">
-            <a  href="#" class="cart__btn cart__btn--active">2 товара</a>
+            <a  href="#" class="header-btn cart__btn cart__btn--active">2 товара</a>
 
             <div class="cart__modal" area-label="Купленные товары">
              
@@ -165,8 +168,8 @@
       </nav>
 
       <p class="contacts">
-          <span>С 10 до 20, ежедневно</span>
-          <a href="#"><b>8 812 450-25-25</b></a>
+          <span>С 10 до 20, ежедневно</span><br>
+          <a href="#" class="contacts__phone"><b>8 812 450-25-25</b></a>
       </p>
     </header>
     
@@ -195,108 +198,108 @@
         <h2 class="visually-hidden">Католог сливочного мороженого</h2>
         <ul class="catalog-list">
           <li class="catalog-list__item">
-            <img src="img/cream-with-orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              310 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/cream-with-orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="item-image" width="267" height="267">
+            <p class="item-price">
+              310 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creamy-coffee-with-chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              380 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creamy-coffee-with-chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="item-image" width="267" height="267">
+            <p class="item-price">
+              380 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creamy-strawberry-with-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              355 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creamy-strawberry-with-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="item-image" width="267" height="267">
+            <p class="item-price">
+              355 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creme-brulee-with-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              415 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creme-brulee-with-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="item-image" width="267" height="267">
+            <p class="item-price">
+              415 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creamy-with-lingonberry-jam.jpg" alt="Сливочное с брусничным джемом" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              325 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creamy-with-lingonberry-jam.jpg" alt="Сливочное с брусничным джемом" class="item-image" width="267" height="267">
+            <p class="item-price">
+              325 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочное с брусничным джемом</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creamy-blueberry-with-blueberries.jpg" alt="Сливочно-черничное с цельными ягодами черники" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              410 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creamy-blueberry-with-blueberries.jpg" alt="Сливочно-черничное с цельными ягодами черники" class="item-image" width="267" height="267">
+            <p class="item-price">
+              410 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочно-черничное с цельными ягодами черники</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/cream-lemon-with-caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              375 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/cream-lemon-with-caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой" class="item-image" width="267" height="267">
+            <p class="item-price">
+              375 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочно-лимонное с карамельной присыпкой</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creamy-chocolate-chips.jpg" alt="Сливочное с шоколадной стружкой" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              320 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creamy-chocolate-chips.jpg" alt="Сливочное с шоколадной стружкой" class="item-image" width="267" height="267">
+            <p class="item-price">
+              320 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочное с шоколадной стружкой</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creamy-vanilla-with-chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              440 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creamy-vanilla-with-chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада" class="item-image" width="267" height="267">
+            <p class="item-price">
+              440 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочно-ванильное с кусочками шоколада</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/cream-with-menthol.jpg" alt="Сливочноe с ментоловым сиропом" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              435 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/cream-with-menthol.jpg" alt="Сливочноe с ментоловым сиропом" class="item-image" width="267" height="267">
+            <p class="item-price">
+              435 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочноe с ментоловым сиропом</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/creamy-with-black-chocolate.jpg" alt="Сливочное с кусочками черного шоколада" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              355 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/creamy-with-black-chocolate.jpg" alt="Сливочное с кусочками черного шоколада" class="item-image" width="267" height="267">
+            <p class="item-price">
+              355 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочное с кусочками черного шоколада</h3>
             </a>
           </li>
           <li class="catalog-list__item">
-            <img src="img/cream-mint-syrup.jpg" alt="Сливочное с мятным сиропом" class="item-image" width="250" height="250">
-            <p class="citem-price">
-              320 ₽ / <span class="catalog-list__weight">кг</span>
+            <img src="img/cream-mint-syrup.jpg" alt="Сливочное с мятным сиропом" class="item-image" width="267" height="267">
+            <p class="item-price">
+              320 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
               <h3>Сливочное с мятным сиропом</h3>
@@ -359,39 +362,39 @@
         </li>
       </ul>
   
-      <p class="creater-info">
+      <div class="creater-info">
         <a href="#">
-          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="logo" width="120" height="50">
+          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="logo" width="200" height="50">
         </a>
-        <p calss="copyright">
-            Сделано в <a href="#">HTML Academy</a>© 2017
+        <p class="copyright">
+            Сделано в <a href="#" class="copyright__link">HTML Academy</a>© 2017
         </p>
-      </p>
-      </footer>
-
-      <div class="feedback-form">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <b>Мы обязательно вам ответим!</b>
-        <form action="https://echo.htmlacademy.ru" type="post" name="feedback">
-          <p class="feedback-form__item">
-            <label for="user-name" class="visually-hidden">Ваше имя</label>
-            <input type="text" id="user-name" name="name" class="feedback-form__input" placeholder="Как вас зовут?">
-          </p>
-          
-          <p class="feedback-form__item">
-            <label for="user-mail" class="visually-hidden">Ваше почта</label>
-            <input type="text" id="user-mail" name="mail" class="feedback-form__input" placeholder="Ваша почта для ответа?">
-          </p>
-          
-          <p class="feedback-form__item">
-            <label for="user-text" class="visually-hidden">Ваше сообщение</label>
-            <textarea id="user-text" name="text" class="feedback-form__area" placeholder="Напишите что-нибудь..."></textarea>
-          </p>
-          
-          <p class="feedback-form__item">
-            <button type="submit" class="feedback-form__button">Отправить</button>
-          </p>
-        </form>
       </div>
+    </footer>
+
+    <div class="feedback-form">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <b>Мы обязательно вам ответим!</b>
+      <form action="https://echo.htmlacademy.ru" type="post" name="feedback">
+        <p class="feedback-form__item">
+          <label for="user-name" class="visually-hidden">Ваше имя</label>
+          <input type="text" id="user-name" name="name" class="feedback-form__input" placeholder="Как вас зовут?">
+        </p>
+        
+        <p class="feedback-form__item">
+          <label for="user-mail" class="visually-hidden">Ваше почта</label>
+          <input type="text" id="user-mail" name="mail" class="feedback-form__input" placeholder="Ваша почта для ответа?">
+        </p>
+        
+        <p class="feedback-form__item">
+          <label for="user-text" class="visually-hidden">Ваше сообщение</label>
+          <textarea id="user-text" name="text" class="feedback-form__area" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        
+        <p class="feedback-form__item">
+          <button type="submit" class="feedback-form__button">Отправить</button>
+        </p>
+      </form>
+    </div>
   </body>
 </html>

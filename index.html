@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Глейси - главная</title>
   </head>
   <body>
@@ -14,9 +17,9 @@
         <ul class="main-menu">
           <li class="main-menu__item">
             <a href="catalog.html" class="main-menu__link">Каталог</a>
-            <ul class="sub-menu visually-hidden">
-              <li class="sub-menu__item">
-                <a href="#" class="sub-menu__link sub-menu__link--new">Новинки</a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item-novelty">
+                Новинки
               </li>
               <li class="sub-menu__item">
                 <a href="#" class="sub-menu__link">Сливочное</a>
@@ -42,7 +45,7 @@
 
         <div class="main-navigation__control-nav">
           <div class="search">
-            <button class="search__btn">Поиск</button>
+            <button class="header-btn search__btn">Поиск</button>
 
             <div class="search__modal" area-label="Поиск по сайту">
               <form action="https://echo.htmlacademy.ru" name="search" type="get">
@@ -57,7 +60,7 @@
           <div class="user">
             <ul class="user__menu">
               <li class="user__menu-item">
-                <a href="#" class="user__menu-link">Вход</a> 
+                <a href="#" class="header-btn user__menu-link">Вход</a> 
               </li>
             </ul>
 
@@ -86,7 +89,7 @@
           </div>
     
           <div class="cart">
-            <a  href="#" class="cart__btn">Пусто</a>
+            <a  href="#" class="header-btn cart__btn">Пусто</a>
           </div>
         </div>
       </nav>
@@ -189,19 +192,19 @@
       <section class="advantages">
         <h1>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h1>
         <ul class="advantages__list">
-          <li>
+          <li class="advantages__item">
             Все наше мороженое изготавливается на собственном производстве, 
             с использованием современного оборудования и проверенных временем технологий.
           </li>
-          <li>
+          <li class="advantages__item">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
-          <li>
+          <li class="advantages__item">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
-          <li>
+          <li class="advantages__item">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
             который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
@@ -219,16 +222,18 @@
       </section>
 
       <section class="subscribe">
-        <h2 class="visually-hidden">Рассылка нашего магазина</h2>
-        <p class="description">
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
-          что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
-        <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
-          <label for="subscribe-mail" class="visually-hidden">Ваша эелектронная почта</label>
-          <input type="email" name="subscribe-mail" id="subscribe-mail" class="subscribe__mail" placeholder="Электронная почта">
-          <button type="submit" class="subscribe__button">Отправить</button>
-        </form>
+        <div class="subscribe-wrap">
+          <h2 class="visually-hidden">Рассылка нашего магазина</h2>
+          <p class="description">
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
+            что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+          <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
+            <label for="subscribe-mail" class="visually-hidden">Ваша эелектронная почта</label>
+            <input type="email" name="subscribe-mail" id="subscribe-mail" class="subscribe__mail" placeholder="Электронная почта">
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </div>
       </section>
 
       <section class="map">
@@ -288,14 +293,14 @@
         </li>
       </ul>
 
-      <p class="creater-info">
+      <div class="creater-info">
         <a href="#">
-          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="logo" width="120" height="50">
+          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="logo" width="200" height="50">
         </a>
-        <p calss="copyright">
-            Сделано в <a href="#">HTML Academy</a>© 2017
+        <p class="copyright">
+            Сделано в <a href="#" class="copyright__link">HTML Academy</a>© 2017
         </p>
-      </p>
+      </div>
     </footer>
 
     <div class="feedback-form">
