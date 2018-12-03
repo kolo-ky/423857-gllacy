@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a>
-          <img src="img/logo.svg" class="logo-image" alt="Логотип магазина Глэйси" width="150" height="80">
+          <img src="img/logo.svg" class="main-navigation__logo-image" alt="Логотип магазина Глэйси" width="642" height="267">
         </a>
 
         <ul class="main-menu">
@@ -197,8 +197,8 @@
             с использованием современного оборудования и проверенных временем технологий.
           </li>
           <li class="advantages__item">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
-            Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, 
+            с которыми нас связывает долговременное сотрудничество.
           </li>
           <li class="advantages__item">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
@@ -211,31 +211,33 @@
         </ul>
       </section>
 
-      <section class="blog-preview">
-        <h2 class="blog-preview__title">Новое в нашем блоге</h2>
-
-        <a href="#" class="blog-preview__subtitle">
-          10 способов сервировки
-          фруктовых щербетов к
-          столу
-        </a>
-      </section>
-
-      <section class="subscribe">
-        <div class="subscribe__wrap">
-          <h2 class="visually-hidden">Рассылка нашего магазина</h2>
-          <p class="subscribe__description">
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
-            что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-          </p>
-          <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
-            <label for="subscribe-mail" class="visually-hidden">Ваша эелектронная почта</label>
-            <input type="email" name="subscribe-mail" id="subscribe-mail" class="subscribe__mail" placeholder="Электронная почта">
-            <button type="submit" class="btn">Отправить</button>
-          </form>
-        </div>
-      </section>
-
+      <div class="cards-wrapper">
+        <section class="blog-preview">
+          <h2 class="blog-preview__title">Новое в нашем блоге</h2>
+  
+          <a href="#" class="blog-preview__subtitle">
+            10 способов сервировки
+            фруктовых щербетов к
+            столу
+          </a>
+        </section>
+  
+        <section class="subscribe">
+          <div class="subscribe__wrap">
+            <h2 class="visually-hidden">Рассылка нашего магазина</h2>
+            <p class="subscribe__description">
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
+              что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </p>
+            <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
+              <label for="subscribe-mail" class="visually-hidden">Ваша эелектронная почта</label>
+              <input type="email" name="subscribe-mail" id="subscribe-mail" class="subscribe__mail" placeholder="Электронная почта">
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      
       <section class="map">
         <h2 class="visually-hidden">Наши контактные данные</h2>
         <img src="img/map.jpg" alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map__image" width="600" height="400">
@@ -253,7 +255,7 @@
 
           <p class="map__info work-time">(с 10 до 20 ежедневно)</p>
 
-          <a href="#" class="map__info link">Форма обрптной связи</a>
+          <a href="#" class="map__info link">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -283,10 +285,10 @@
           </a>
         </li>
         <li class="tech-info-menu__item">
-          <a href="#" class="tech-info-menu__link">О производстве</a>
+          <a href="#" class="tech-info-menu__link">Наши документы</a>
         </li>
         <li class="tech-info-menu__item">
-          <a href="#" class="tech-info-menu__link">Наши документы</a>
+          <a href="#" class="tech-info-menu__link">О производстве</a>
         </li>
         <li class="tech-info-menu__item">
           <a href="#" class="tech-info-menu__link">Экологические стандарты</a>
@@ -295,7 +297,7 @@
 
       <div class="creater-info">
         <a href="#">
-          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="logo" width="200" height="50">
+          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="creater-info__logo" width="200" height="50">
         </a>
         <p class="creater-info__copyright">
             Сделано в <a href="#" class="creater-info__copyright-link">HTML Academy</a>© 2017
