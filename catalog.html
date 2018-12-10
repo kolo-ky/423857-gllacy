@@ -118,15 +118,14 @@
                   <input type="password" id="user-password" name="password" class="user__input" placeholder="Пароль">
                 </p>
         
-                <p class="user__btn-wrapper">
+                <div class="user__btn-wrapper">
                   <button type="submit" class="btn">Войти</button>
-                </p>
+                  <p class="user__login-options">
+                    <a href="#" class="user__link">Забыли пароль?</a>
+                    <a href="#" class="user__link">Новая регистрация</a>
+                  </p>
+                </div>
               </form>
-
-              <p class="user__login-options">
-                <a href="#" class="link">Забыли пароль?</a>
-                <a href="#" lass="link">Новая регистрация</a>
-              </p>
             </div>
           </div>
     
@@ -160,10 +159,10 @@
              
               <table class="products-table">
                 <tr class="products-table__row">
-                  <td>
-                    <button type="button" class="products-table__close-button">Удалить</button>
+                  <td class="products-table__ceil">
+                    <button type="button" class="products-table__close-button" aria-label="Удалить"></button>
                   </td>
-                  <td>
+                  <td class="products-table__ceil">
                     <img 
                       src="img/cream-with-orange-jam.jpg" 
                       class="products-table__image" 
@@ -175,7 +174,7 @@
                       Сливочное с апельсиновым джемом и цитрусовой стружкой
                     </span>
                   </td>
-                  <td>
+                  <td class="products-table__ceil">
                     <span class="products-table__weight">
                       1,5 кг
                     </span>
@@ -183,17 +182,17 @@
                       200 руб
                     </span>
                   </td>
-                  <td>
+                  <td class="products-table__ceil">
                     <span class="products-table__row-price">
                       300 руб
                     </span>
                   </td>
                 </tr>
                 <tr class="products-table__row">
-                  <td>
-                    <button type="button" class="products-table__close-button">Удалить</button>
+                  <td class="products-table__ceil">
+                    <button type="button" class="products-table__close-button" aria-label="Удалить"></button>
                   </td>
-                  <td>
+                  <td class="products-table__ceil">
                     <img 
                       src="img/creamy-strawberry-with-white-chocolate.jpg" 
                       class="products-table__image" 
@@ -205,7 +204,7 @@
                       Сливочно-клубничное с присыпкой из белого шоколада
                     </span>
                   </td>
-                  <td>
+                  <td class="products-table__ceil">
                     <span class="products-table__weight">
                       1,5 кг
                     </span>
@@ -213,14 +212,14 @@
                       300 руб
                     </span>
                   </td>
-                  <td>
+                  <td class="products-table__ceil">
                     <span class="products-table__row-price">
                       400 руб
                     </span>
                   </td>
                 </tr>
                 <tr class="products-table__row">
-                  <td colspan="4" class="products-table__total-price">
+                  <td colspan="5" class="products-table__total-price">
                     Итого: 750 руб.
                   </td>
                 </tr>
