@@ -16,16 +16,16 @@
   
         <ul class="main-menu">
           <li class="main-menu__item">
-            <a href="catalog.html" class="main-menu__link">Каталог</a>
+            <a href="catalog.html" class="main-menu__link--active">Каталог</a>
             <ul class="sub-menu">
-              <li class="sub-menu__item-novelty">
-                Новинки
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link-novelty">Новинки</a>
               </li>
               <li class="sub-menu__item">
                 <a href="#" class="sub-menu__link">Сливочное</a>
               </li>
-              <li class="sub-menu__item sub-menu__item--active">
-                <a href="#" class="sub-menu__link">Щербеты</a>
+              <li class="sub-menu__item active">
+                <a href="#" class="sub-menu__link sub-menu__link">Щербеты</a>
               </li>
               <li class="sub-menu__item">
                 <a href="#" class="sub-menu__link">Фруктовый лед</a>
@@ -45,7 +45,27 @@
   
         <div class="main-navigation__control-nav">
           <div class="search">
-            <button class="search__btn">Поиск</button>
+            <button class="search__btn">
+              <span class="visually-hidden">Поиск</span>
+              <svg 
+                version="1.1" 
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                x="0px" 
+                y="0px" 
+                width="17px"
+                height="17px" 
+                viewBox="0 0 17 17" 
+                enable-background="new 0 0 17 17" 
+                xml:space="preserve"
+              >
+                <g id="Layer_2">
+                  <path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+                    S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
+                    S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+                </g>
+              </svg>
+            </button>
 
             <div class="search__modal" area-label="Поиск по сайту">
               <form action="https://echo.htmlacademy.ru" name="search" type="get">
@@ -60,12 +80,34 @@
           <div class="user">
             <ul class="user__menu">
               <li class="user__menu-item">
-                <a href="#" class="user__menu-link">Вход</a> 
+                <a href="#" class="user__menu-link">
+                  <svg 
+                    version="1.1" 
+                    id="Layer_1" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    x="0px" 
+                    y="0px"
+                    width="21px" 
+                    height="19px" 
+                    viewBox="0 0 21 19" 
+                    nable-background="new 0 0 21 19" 
+                    xml:space="preserve">
+                    <g>
+                      <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959"/>
+                      <path 
+                        fill="#FFFFFF" 
+                        d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+                      />
+                    </g>
+                  </svg>
+                  Вход
+                </a> 
               </li>
             </ul>
 
             <div class="user__modal" area-label="Форма входа на сайт">
-              <form action="https://echo.htmlacademy.ru" type="post" name="login">
+              <form action="https://echo.htmlacademy.ru" class="user__form" type="post" name="login">
                 <p class="user__input-wrapper">
                   <label for="user-mail" class="visually-hidden">Ваша электронная почта</label>
                   <input type="email" id="user-mail" name="mail" class="user__input" placeholder="Электронная почта">
@@ -76,7 +118,7 @@
                   <input type="password" id="user-password" name="password" class="user__input" placeholder="Пароль">
                 </p>
         
-                <p cclass="user__btn-wrapper">
+                <p class="user__btn-wrapper">
                   <button type="submit" class="btn">Войти</button>
                 </p>
               </form>
@@ -89,7 +131,30 @@
           </div>
     
           <div class="cart">
-            <a  href="#" class="cart__btn cart__btn--active">2 товара</a>
+            <a  href="#" class="cart__btn">
+              <svg 
+                version="1.1" 
+                id="Layer_1" 
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                x="0px" 
+                y="0px"
+                width="21px" 
+                height="20px" 
+                viewBox="0 0 21 20" 
+                enable-background="new 0 0 21 20" 
+                xml:space="preserve"
+              >
+                <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+                <circle fill="#343434" cx="6.984" cy="18" r="2"/>
+                <circle fill="#343434" cx="15.984" cy="18" r="2"/>
+                <path 
+                  fill="#343434" 
+                  d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+	                   L17.372,13z"/>
+              </svg>
+              2 товара
+            </a>
 
             <div class="cart__modal" area-label="Купленные товары">
              
@@ -187,7 +252,7 @@
       </ul>
 
 
-      <h1>Сливочное мороженое</h1>
+      <h1 class="page-title">Сливочное мороженое</h1>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -203,8 +268,9 @@
               310 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <h3 class="item-title__product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creamy-coffee-with-chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="catalog-list__item-image" width="267" height="267">
@@ -212,8 +278,9 @@
               380 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <h3 class="item-title__product-name">Сливочно-кофейное с кусочками шоколада</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creamy-strawberry-with-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="catalog-list__item-image" width="267" height="267">
@@ -221,8 +288,9 @@
               355 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <h3 class="item-title__product-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creme-brulee-with-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="catalog-list__item-image" width="267" height="267">
@@ -230,8 +298,9 @@
               415 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <h3 class="item-title__product-name">Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creamy-with-lingonberry-jam.jpg" alt="Сливочное с брусничным джемом" class="catalog-list__item-image" width="267" height="267">
@@ -239,8 +308,9 @@
               325 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочное с брусничным джемом</h3>
+              <h3 class="item-title__product-name">Сливочное с брусничным джемом</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creamy-blueberry-with-blueberries.jpg" alt="Сливочно-черничное с цельными ягодами черники" class="catalog-list__item-image" width="267" height="267">
@@ -248,8 +318,9 @@
               410 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочно-черничное с цельными ягодами черники</h3>
+              <h3 class="item-title__product-name">Сливочно-черничное с цельными ягодами черники</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/cream-lemon-with-caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой" class="catalog-list__item-image" width="267" height="267">
@@ -257,8 +328,9 @@
               375 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+              <h3 class="item-title__product-name">Сливочно-лимонное с карамельной присыпкой</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creamy-chocolate-chips.jpg" alt="Сливочное с шоколадной стружкой" class="catalog-list__item-image" width="267" height="267">
@@ -266,8 +338,9 @@
               320 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочное с шоколадной стружкой</h3>
+              <h3 class="item-title__product-name">Сливочное с шоколадной стружкой</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creamy-vanilla-with-chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада" class="catalog-list__item-image" width="267" height="267">
@@ -275,8 +348,9 @@
               440 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочно-ванильное с кусочками шоколада</h3>
+              <h3 class="item-title__product-name">Сливочно-ванильное с кусочками шоколада</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/cream-with-menthol.jpg" alt="Сливочноe с ментоловым сиропом" class="catalog-list__item-image" width="267" height="267">
@@ -284,8 +358,9 @@
               435 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочноe с ментоловым сиропом</h3>
+              <h3 class="item-title__product-name">Сливочноe с ментоловым сиропом</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/creamy-with-black-chocolate.jpg" alt="Сливочное с кусочками черного шоколада" class="catalog-list__item-image" width="267" height="267">
@@ -293,8 +368,9 @@
               355 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочное с кусочками черного шоколада</h3>
+              <h3 class="item-title__product-name">Сливочное с кусочками черного шоколада</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
           <li class="catalog-list__item">
             <img src="img/cream-mint-syrup.jpg" alt="Сливочное с мятным сиропом" class="catalog-list__item-image" width="267" height="267">
@@ -302,72 +378,74 @@
               320 ₽<span class="catalog-list__weight">/кг</span>
             </p>
             <a href="#" class="item-title__link">
-              <h3>Сливочное с мятным сиропом</h3>
+              <h3 class="item-title__product-name">Сливочное с мятным сиропом</h3>
             </a>
+            <a href="#" class="btn catalog-list__btn">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
-
-      <ul class="pagination">
-        <li class="pagination__item pagination__item--active">
-          <a href="#" class="pagination__link">1</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">2</a>
-        </li>
-        <li class="pagination__item">
-            <a href="#" class="pagination__link">3</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">4</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">5</a>
-        </li>
-      </ul>
     </main>
 
     <footer class="main-footer">
+
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link">Twitter</a>
+          <a href="#" class="social-list__link social-list__link--twitter"><span class="visually-hidden">Twitter</span></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">Instagramm</a>
+          <a href="#" class="social-list__link social-list__link--instagramm"><span class="visually-hidden">Instagramm</span></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">Facebook</a>
+          <a href="#" class="social-list__link social-list__link--fb"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">В контакте</a>
+          <a href="#" class="social-list__link social-list__link--vk"><span class="visually-hidden">В контакте</span></a>
         </li>
       </ul>
-  
+
       <ul class="tech-info-menu">
         <li class="tech-info-menu__item">
-          <a href="#" class="tech-info-menu__link">
-            <b>
-                Для поставщиков
-            </b>
+          <a href="#" class="tech-info-menu__link tech-info-menu__link--provider">
+            <svg 
+              version="1.1" 
+              id="Layer_1" 
+              xmlns="http://www.w3.org/2000/svg" 
+              xmlns:xlink="http://www.w3.org/1999/xlink" 
+              x="0px" 
+              y="0px"
+              width="15px" 
+              height="13px" 
+              viewBox="0 0 15 13" 
+              enable-background="new 0 0 15 13" 
+              xml:space="preserve"
+            >
+              <path fill="#FFFFFF" 
+                    d="M10.799,0c-1.35,0-2.551,0.65-3.3,1.661C6.75,0.65,5.549,0,4.199,0C1.875,0,0,1.806,0,4.044
+                    C0,7.223,7.499,13,7.499,13s7.499-5.777,7.499-8.956C14.998,1.806,13.123,0,10.799,0z"/>
+           </svg>
+            Для поставщиков
           </a>
-        </li>
-        <li class="tech-info-menu__item">
-          <a href="#" class="tech-info-menu__link">О производстве</a>
         </li>
         <li class="tech-info-menu__item">
           <a href="#" class="tech-info-menu__link">Наши документы</a>
         </li>
-        <li class="tech-info-menu__item">
-          <a href="#" class="tech-info-menu__link">Экологические стандарты</a>
+      </ul>
+
+      <ul class="doc-info-menu">
+        <li class="doc-info-menu__item">
+          <a href="#" class="doc-info-menu__link">О производстве</a>
+        </li>
+        <li class="doc-info-menu__item">
+          <a href="#" class="doc-info-menu__link">Экологические стандарты</a>
         </li>
       </ul>
-  
+
       <div class="creater-info">
         <a href="#">
-          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="creater-info__logo" width="200" height="50">
+          <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="creater-info__logo" width="109" height="39">
         </a>
         <p class="creater-info__copyright">
-            Сделано в <a href="#" class="creater-info__copyright-link">HTML Academy</a>© 2017
+          Сделано в <a href="#" class="creater-info__copyright-link">HTML Academy</a> © 2017
         </p>
       </div>
     </footer>
