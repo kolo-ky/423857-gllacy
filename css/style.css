@@ -41,7 +41,8 @@ img {
 
 .btn:hover,
 .btn:focus {
-  background-color: #ee7561
+  background-color: #ee7561;
+  cursor: pointer;
 }
 
 .btn:active {
@@ -73,7 +74,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   width: 1148px;
 }
 
@@ -90,10 +91,16 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.main-navigation__logo-image {
+/* Стили лого */
+
+.logo {
+  display: block;
+}
+
+.logo__image {
   width: 154px;
   height: 64px;
-  margin: 10px 8px 0 0;
+  margin: 0 10px 0 0;
 }
 
 /* Стили меню */
@@ -102,8 +109,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0;
-  margin: 8px 0 0 0;
+  margin: 0;
 
   font-size: 16px;
   font-weight: 700;
@@ -157,6 +165,7 @@ input[type="radio"].visually-hidden {
 .sub-menu {
   position: absolute;
   top: 40px;
+  left: -7px;
   z-index: 2;
   display: none;
   padding: 0 0 5px 0;
@@ -215,7 +224,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
-  min-width: 267px;
+  min-width: 245px;
 }
 
 /* Стили модального окна поиска */
@@ -266,12 +275,14 @@ input[type="radio"].visually-hidden {
 .search__btn {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-right: 10px;
   font: inherit;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  text-align: center;
   color: #ffffff;
 
   width: 33px;
@@ -387,6 +398,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   padding: 7px 16px;
+  margin-bottom: 8px;
+  margin-right: 10px;
   font: inherit;
   text-align: center;
   font-size: 14px;
@@ -576,6 +589,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   padding: 7px 16px;
+  margin-bottom: 8px;
   font: inherit;
   text-align: center;
   font-size: 14px;
@@ -631,7 +645,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
 }
@@ -645,42 +659,37 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__item {
+  display: flex;
+  align-items: flex-start;
   position: relative;
-  margin-top: 10px;
   padding-top: 10px;
-  padding-left: 57px;
   color: #323232;
   font-size: 16px;
   line-height: 22px;
   list-style: none;
-  width: 485px;
+  width: 540px;
+}
+
+.advantages__item-description {
+  display: block;
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .advantages__item--icecream::before {
-  position: absolute;
-  left: 0;
-  top:0;
   content: url('../img/icecream-icon.svg');
 }
 
 .advantages__item--cow::before {
-  position: absolute;
-  left: 0;
-  top:0;
   content: url('../img/cow-icon.svg');
 }
 
 .advantages__item--sheet::before {
-  position: absolute;
-  left: 0;
-  top:0;
   content: url('../img/sheet-icon.svg');
 }
 
 .advantages__item--thermometer::before {
-  position: absolute;
-  left: 0;
-  top:0;
   content: url('../img/thermometer-icon.svg');
 }
 
@@ -709,7 +718,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   color: #323232;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
@@ -803,24 +811,32 @@ input[type="radio"].visually-hidden {
   opacity: 0.8;
 }
 
+.social-list__item:last-child {
+  margin-right: 0;
+}
+
 .social-list__link--twitter {
   background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-list__link--instagramm {
   background-image: url(../img/instagram.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-list__link--fb {
   background-image: url(../img/facebook.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-list__link--vk {
   background-image: url(../img/vk.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-list__link:hover,
@@ -836,11 +852,10 @@ input[type="radio"].visually-hidden {
 
 .tech-info-menu{
   display: flex;
-  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 32px 0 auto;
+  max-width: 340px;
   list-style: none;
 }
 
@@ -889,45 +904,6 @@ input[type="radio"].visually-hidden {
   fill: #ffbc9e;
 }
 
-/* Стили ссылок на документы */
-
-.doc-info-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto 0 0;
-  list-style: none;
-}
-
-.doc-info-menu__item {
-  min-width: 133px;
-}
-
-.doc-info-menu__link {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.doc-info-menu__link::after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.doc-info-menu__link:hover,
-.doc-info-menu__link:focus {
-  color: #ffbc9e;
-}
-
-.doc-info-menu__link:hover.doc-info-menu__link::after,
-.doc-info-menu__link:focus.doc-info-menu__link__link::after,
-.doc-info-menu__link:active.doc-info-menu__link::after {
-  border-bottom: 1px solid rgba(255, 188, 158, 0.5);
-}
 
 /* Стили копирайта */
 
@@ -1007,6 +983,10 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
 }
 
+.breadcrumbs-list__item:last-child {
+  padding-right: 0;
+}
+
 .breadcrumbs-list__item::after {
   position: absolute;
   top: 0;
@@ -1046,14 +1026,13 @@ input[type="radio"].visually-hidden {
 
 .catalog {
   margin-top: 40px;
-  padding-top: 35px;
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
+  padding: 35px 0 0 0;
   margin: 0;
   list-style: none;
 }
@@ -1063,9 +1042,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 8px 12px;
   margin-top: -35px;
+  padding-top: 8px;
   padding-bottom: 20px;
+  padding-right:12px;
+  padding-left: 12px;
   width: 267px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -1126,11 +1107,12 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   display: flex;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;;
+  padding: 35px 0;
   justify-content: space-between;
   align-items: center;
   width: 1148px;
-  height: 104px;
+  border-top: 1px solid #cacac7;
 }
 
 .feedback-form {

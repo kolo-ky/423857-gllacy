@@ -10,8 +10,8 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a>
-          <img src="img/logo.svg" class="main-navigation__logo-image" alt="Логотип магазина Глэйси" width="642" height="267">
+        <a class="logo">
+          <img src="img/logo.svg" class="logo__image" alt="Логотип магазина Глэйси" width="154" height="54">
         </a>
 
         <ul class="main-menu">
@@ -170,20 +170,28 @@
         <h1 class="advantages__title">Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h1>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--icecream">
-            Все наше мороженое изготавливается на собственном производстве, 
-            с использованием современного оборудования и проверенных временем технологий.
+            <span class="advantages__item-description">
+              Все наше мороженое изготавливается на собственном производстве,
+              с использованием современного оборудования и проверенных временем технологий.
+            </span>
           </li>
           <li class="advantages__item advantages__item--cow">
-            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, 
-            с которыми нас связывает долговременное сотрудничество.
+            <span class="advantages__item-description">
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+              с которыми нас связывает долговременное сотрудничество.
+            </span>
           </li>
           <li class="advantages__item advantages__item--sheet">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
-            Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            <span class="advantages__item-description">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </span>
           </li>
           <li class="advantages__item advantages__item--thermometer">
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
-            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            <span class="advantages__item-description">
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+              который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </span>
           </li>
         </ul>
       </section>
@@ -256,14 +264,11 @@
         <li class="tech-info-menu__item">
           <a href="#" class="tech-info-menu__link">Наши документы</a>
         </li>
-      </ul>
-
-      <ul class="doc-info-menu">
-        <li class="doc-info-menu__item">
-          <a href="#" class="doc-info-menu__link">О производстве</a>
+        <li class="tech-info-menu__item">
+          <a href="#" class="tech-info-menu__link">О производстве</a>
         </li>
-        <li class="doc-info-menu__item">
-          <a href="#" class="doc-info-menu__link">Экологические стандарты</a>
+        <li class="tech-info-menu__item">
+          <a href="#" class="tech-info-menu__link">Экологические стандарты</a>
         </li>
       </ul>
 
@@ -287,8 +292,8 @@
         </p>
         
         <p class="feedback-form__item">
-          <label for="user-mail" class="visually-hidden">Ваше почта</label>
-          <input type="text" id="user-mail" name="mail" class="feedback-form__input" placeholder="Ваша почта для ответа?">
+          <label for="feedback-user-mail" class="visually-hidden">Ваше почта</label>
+          <input type="text" id="feedback-user-mail" name="mail" class="feedback-form__input" placeholder="Ваша почта для ответа?">
         </p>
         
         <p class="feedback-form__item">
