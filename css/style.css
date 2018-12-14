@@ -253,6 +253,10 @@ input[type="radio"].visually-hidden {
 .search__input {
   padding: 0 0 0 15px;
   margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
   box-sizing: border-box;
   border: 1px solid #c7c6c5;
   border-radius: 5px;
@@ -370,6 +374,10 @@ input[type="radio"].visually-hidden {
 .user__input {
   padding: 0 0 0 15px;
   box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
   border: 1px solid #c7c6c5;
   border-radius: 5px;
   width: 240px;
@@ -1116,6 +1124,130 @@ input[type="radio"].visually-hidden {
   border-top: 1px solid #cacac7;
 }
 
+/* Стили формы обратной связи */
+
+.feedback-wrapper {
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .feedback-form {
-  display: none;
+  position: relative;
+  padding: 25px;
+  width: 478px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #f8f7f4;
+}
+
+.feedback-form__title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-form__item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.feedback-form__item:last-child {
+  margin-bottom: 0;
+}
+
+.feedback-form__input {
+  padding: 0 0 0 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  border: 1px solid #c7c6c5;
+  border-radius: 5px;
+  width: 100%;
+  height: 44px;
+}
+
+.feedback-form__input:hover {
+  padding: 0 0 0 14px;
+  border: 2px solid #c7c6c5;
+}
+
+.feedback-form__input:focus {
+  padding: 0 0 0 14px;
+  outline: none;
+  border: 2px solid #2e88e4;
+}
+
+.feedback-form__area{
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  width: 100%;
+  min-height: 154px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #c7c6c5;
+  resize: none;
+}
+
+.feedback-form__area:hover {
+  padding: 9px 14px;
+  border: 2px solid #c7c6c5;
+}
+
+.feedback-form__area:focus {
+  padding: 9px 14px;
+  outline: none;
+  border: 2px solid #2e88e4;
+}
+
+.feedback-form__close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: 0;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.feedback-form__close-button::before, .feedback-form__close-button::after {
+  position: absolute;
+  margin: 0 auto;
+  top:0;
+  content: '';
+  height: 18px;
+  width: 2px;
+  background-color: #231f20;
+}
+.feedback-form__close-button::before {
+  transform: rotate(45deg);
+}
+
+.feedback-form__close-button::after {
+  transform: rotate(-45deg);
+}
+
+.feedback-form__close-button:hover.feedback-form__close-button::before,
+.feedback-form__close-button:hover.feedback-form__close-button::after,
+.feedback-form__close-button:focus.feedback-form__close-button::before,
+.feedback-form__close-button:focus.feedback-form__close-button::after {
+  background-color: #e84d37;
 }
