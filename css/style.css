@@ -1204,7 +1204,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #2e88e4;
 }
 
-.feedback-fom__btn {
+.feedback-form__btn {
   margin-top: 5px;
   margin-left: auto;
 }
@@ -1212,16 +1212,20 @@ input[type="radio"].visually-hidden {
 /* Стили попапа */
 
 .popup {
+  display: none;
   position:fixed;
   top: 0;
   left: 0;
   bottom: 0;
   z-index: 5;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-show{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .popup__container {
