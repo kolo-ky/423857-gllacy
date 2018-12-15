@@ -1126,7 +1126,7 @@ input[type="radio"].visually-hidden {
 
 /* Стили формы обратной связи */
 
-.feedback-form-section {
+.feedback-form {
   position: relative;
   padding: 25px;
   width: 478px;
@@ -1135,7 +1135,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
-.feedback-form {
+.feedback-form__form {
   display: flex;
   flex-wrap: wrap;
 }
