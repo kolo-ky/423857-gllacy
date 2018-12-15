@@ -1126,19 +1126,6 @@ input[type="radio"].visually-hidden {
 
 /* Стили формы обратной связи */
 
-.feedback-wrapper {
-  position:fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .feedback-form {
   position: relative;
   padding: 25px;
@@ -1217,7 +1204,26 @@ input[type="radio"].visually-hidden {
   border: 2px solid #2e88e4;
 }
 
-.feedback-form__close-button {
+/* Стили попапа */
+
+.popup {
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup__container {
+  position: relative;
+}
+
+.popup__button {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -1228,7 +1234,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.feedback-form__close-button::before, .feedback-form__close-button::after {
+.popup__button::before, .popup__button::after {
   position: absolute;
   margin: 0 auto;
   top:0;
@@ -1237,17 +1243,17 @@ input[type="radio"].visually-hidden {
   width: 2px;
   background-color: #231f20;
 }
-.feedback-form__close-button::before {
+.popup__button::before {
   transform: rotate(45deg);
 }
 
-.feedback-form__close-button::after {
+.popup__button::after {
   transform: rotate(-45deg);
 }
 
-.feedback-form__close-button:hover.feedback-form__close-button::before,
-.feedback-form__close-button:hover.feedback-form__close-button::after,
-.feedback-form__close-button:focus.feedback-form__close-button::before,
-.feedback-form__close-button:focus.feedback-form__close-button::after {
+.popup__button:hover.popup__button::before,
+.popup__button:hover.popup__button::after,
+.popup__button:focus.popup__button::before,
+.popup__button:focus.popup__button::after {
   background-color: #e84d37;
 }
