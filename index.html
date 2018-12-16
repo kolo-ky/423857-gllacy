@@ -68,7 +68,7 @@
             </button>
 
             <div class="search__modal" area-label="Поиск по сайту">
-              <form action="https://echo.htmlacademy.ru" name="search" type="get">
+              <form action="https://echo.htmlacademy.ru" class="search__from" name="search" type="get">
                 <p class="search__input-wrapper">
                   <label for="search-field" class="visually-hidden">Поле поиска</label>
                   <input type="text" id="search-field" name="search-field" class="search__input" placeholder="Что ищем?">
@@ -107,10 +107,10 @@
             </ul>
 
             <div class="user__modal" area-label="Форма входа на сайт">
-              <form action="https://echo.htmlacademy.ru" type="post" name="login">
+              <form action="https://echo.htmlacademy.ru" class="user__form" type="post" name="login">
                 <p class="user__input-wrapper">
                   <label for="user-mail" class="visually-hidden">Ваша электронная почта</label>
-                  <input type="email" id="user-mail" name="mail" class="user__input" placeholder="Электронная почта">
+                  <input type="email" id="user-mail" name="login-mail" class="user__input" placeholder="Электронная почта">
                 </p>
                 
                 <p class="user__input-wrapper">
@@ -281,7 +281,6 @@
         </p>
       </div>
       <div>
-        <a href="#" class="show-popup-text">показать попап с текстом</a><br>
         <a href="#" class="show-popup-form">показать попап с формой</a>
       </div>
     </footer>
@@ -296,12 +295,12 @@
             <form action="https://echo.htmlacademy.ru" type="post" name="feedback" class="feedback-form__form">
               <p class="feedback-form__item">
                 <label for="user-name" class="visually-hidden">Ваше имя</label>
-                <input type="text" id="user-name" name="name" class="feedback-form__input" placeholder="Как вас зовут?">
+                <input type="text" id="user-name" name="user-name" class="feedback-form__input" placeholder="Как вас зовут?">
               </p>
 
               <p class="feedback-form__item">
                 <label for="feedback-user-mail" class="visually-hidden">Ваше почта</label>
-                <input type="text" id="feedback-user-mail" name="mail" class="feedback-form__input" placeholder="Ваша почта для ответа?">
+                <input type="email" id="feedback-user-mail" name="mail" class="feedback-form__input" placeholder="Ваша почта для ответа?">
               </p>
 
               <p class="feedback-form__item">
@@ -315,19 +314,6 @@
         </div>
       </div>
     </div>
-
-    <div class="popup">
-      <div class="popup__container">
-        <button type="button" class="popup__button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
-        <div class="popup__content">
-          <section class="test-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cupiditate distinctio, dolorem magni odit placeat ut!
-            Adipisci amet culpa earum error fuga necessitatibus nemo quam quasi qui vero. Fugit.
-          </section>
-        </div>
-      </div>
-    </div>
-
     <script src="js/script.js"></script>
   </body>
 </html>
