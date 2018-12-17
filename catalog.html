@@ -49,14 +49,12 @@
               <span class="visually-hidden">Поиск</span>
               <svg 
                 version="1.1" 
-                xmlns="http://www.w3.org/2000/svg" 
-                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                xmlns="http://www.w3.org/2000/svg"
                 x="0px" 
                 y="0px" 
                 width="17px"
                 height="17px" 
-                viewBox="0 0 17 17" 
-                enable-background="new 0 0 17 17" 
+                viewBox="0 0 17 17"
                 xml:space="preserve"
               >
                 <g id="Layer_2">
@@ -67,8 +65,9 @@
               </svg>
             </button>
 
-            <div class="search__modal" area-label="Поиск по сайту">
-              <form action="https://echo.htmlacademy.ru" class="search__from" name="search" type="get">
+            <div class="search__modal">
+              <h3 class="visually-hidden">Форма поиска по сайту</h3>
+              <form action="https://echo.htmlacademy.ru" class="search__from" name="search" method="get">
                 <p class="search__input-wrapper">
                   <label for="search-field" class="visually-hidden">Поле поиска</label>
                   <input type="text" id="search-field" name="search-field" class="search__input" placeholder="Что ищем?">
@@ -82,16 +81,13 @@
               <li class="user__menu-item">
                 <a href="#" class="user__menu-link">
                   <svg 
-                    version="1.1" 
-                    id="Layer_1" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
                     x="0px" 
                     y="0px"
                     width="21px" 
                     height="19px" 
-                    viewBox="0 0 21 19" 
-                    nable-background="new 0 0 21 19" 
+                    viewBox="0 0 21 19"
                     xml:space="preserve">
                     <g>
                       <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959"/>
@@ -106,8 +102,9 @@
               </li>
             </ul>
 
-            <div class="user__modal" area-label="Форма входа на сайт">
-              <form action="https://echo.htmlacademy.ru" class="user__form" type="post" name="login">
+            <div class="user__modal">
+              <h3 class="visually-hidden">Форма входа на сайт</h3>
+              <form action="https://echo.htmlacademy.ru" class="user__form" method="post" name="login">
                 <p class="user__input-wrapper">
                   <label for="user-mail" class="visually-hidden">Ваша электронная почта</label>
                   <input type="email" id="user-mail" name="login-mail" class="user__input" placeholder="Электронная почта">
@@ -132,16 +129,13 @@
           <div class="cart cart--fill">
             <a  href="#" class="cart__btn">
               <svg 
-                version="1.1" 
-                id="Layer_1" 
-                xmlns="http://www.w3.org/2000/svg" 
-                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
                 x="0px" 
                 y="0px"
                 width="21px" 
                 height="20px" 
-                viewBox="0 0 21 20" 
-                enable-background="new 0 0 21 20" 
+                viewBox="0 0 21 20"
                 xml:space="preserve"
               >
                 <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
@@ -155,8 +149,8 @@
               2 товара
             </a>
 
-            <div class="cart__modal" area-label="Купленные товары">
-             
+            <div class="cart__modal">
+              <h3 class="visually-hidden">Товары в корзине</h3>
               <table class="products-table">
                 <tr class="products-table__row">
                   <td class="products-table__ceil">
@@ -219,7 +213,7 @@
                   </td>
                 </tr>
                 <tr class="products-table__row">
-                  <td colspan="5" class="products-table__total-price">
+                  <td colspan="4" class="products-table__total-price">
                     Итого: 750 руб.
                   </td>
                 </tr>
@@ -407,15 +401,12 @@
           <a href="#" class="tech-info-menu__link tech-info-menu__link--provider">
             <svg
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px"
               y="0px"
               width="15px"
               height="13px"
               viewBox="0 0 15 13"
-              enable-background="new 0 0 15 13"
               xml:space="preserve"
             >
               <path fill="#FFFFFF"
@@ -437,11 +428,11 @@
       </ul>
 
       <div class="creater-info">
-        <a href="#">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/html-academy-logo.svg" alt="Логотип компании HTML ACADEMY" class="creater-info__logo" width="109" height="39">
         </a>
         <p class="creater-info__copyright">
-          Сделано в <a href="#" class="creater-info__copyright-link">HTML Academy</a> © 2017
+          Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="creater-info__copyright-link">HTML Academy</a> © 2017
         </p>
       </div>
     </footer>
