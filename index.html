@@ -36,10 +36,10 @@
             </ul>
           </li>
           <li class="main-menu__item">
-            <a href="delivery.html" class="main-menu__link">Доставка и оплата</a>
+            <a href="#" class="main-menu__link">Доставка и оплата</a>
           </li>
           <li class="main-menu__item">
-            <a href="about.html" class="main-menu__link">О компании</a>
+            <a href="#" class="main-menu__link">О компании</a>
           </li>
         </ul>
 
@@ -47,7 +47,7 @@
           <div class="search">
             <button class="search__btn">
               <span class="visually-hidden">Поиск</span>
-              <svg 
+              <svg
                 version="1.1" 
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px" 
@@ -58,7 +58,7 @@
                 xml:space="preserve"
               >
                 <g id="Layer_2">
-                  <path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+                  <path class="search__icon" fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
                     S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
                     S11,4.019,11,6.5S8.981,11,6.5,11z"/>
                 </g>
@@ -156,12 +156,14 @@
 
       <p class="contacts">
         <span>С 10 до 20, ежедневно</span><br>
-        <a href="#" class="contacts__phone"><b>8 812 450-25-25</b></a>
+        <a href="tel:+7 812 450-25-25" class="contacts__phone"><b>8 812 450-25-25</b></a>
       </p>
     </header>
     <main class="container">
       <section class="advantages">
-        <h1 class="advantages__title">Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h1>
+        <h1 class="advantages__title">
+          Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес
+        </h1>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--icecream">
             <span class="advantages__item-description">
@@ -219,16 +221,24 @@
 
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link social-list__link--twitter"><span class="visually-hidden">Twitter</span></a>
+          <a href="#" class="social-list__link social-list__link--twitter">
+            <span class="visually-hidden">Twitter</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link social-list__link--instagramm"><span class="visually-hidden">Instagramm</span></a>
+          <a href="#" class="social-list__link social-list__link--instagramm">
+            <span class="visually-hidden">Instagramm</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link social-list__link--fb"><span class="visually-hidden">Facebook</span></a>
+          <a href="#" class="social-list__link social-list__link--fb">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link social-list__link--vk"><span class="visually-hidden">В контакте</span></a>
+          <a href="#" class="social-list__link social-list__link--vk">
+            <span class="visually-hidden">В контакте</span>
+          </a>
         </li>
       </ul>
 
@@ -271,37 +281,42 @@
           Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="creater-info__copyright-link">HTML Academy</a> © 2017
         </p>
       </div>
+      <div>
+        <a href="#" class="show-popup-form">Открыть попам с формой</a>
+      </div>
     </footer>
 
-    <div class="popup">
+    <section class="popup">
       <div class="popup__container">
-        <button type="button" class="popup__button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
+        <button type="button" class="popup__button" title="Закрыть">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
         <div class="popup__content">
           <section class="feedback-form">
             <h2 class="visually-hidden">Форма обратной связи</h2>
             <b class="feedback-form__title">Мы обязательно вам ответим!</b>
-            <form action="https://echo.htmlacademy.ru" method="post" name="feedback" class="feedback-form__form">
+            <form action="https://echo.htmlacademy.ru" class="feedback-form__form" method="post" name="feedback">
               <p class="feedback-form__item">
                 <label for="user-name" class="visually-hidden">Ваше имя</label>
-                <input type="text" id="user-name" name="user-name" class="feedback-form__input" placeholder="Как вас зовут?">
+                <input class="feedback-form__input" type="text" id="user-name" name="user-name" placeholder="Как вас зовут?">
               </p>
 
               <p class="feedback-form__item">
                 <label for="feedback-user-mail" class="visually-hidden">Ваше почта</label>
-                <input type="email" id="feedback-user-mail" name="mail" class="feedback-form__input" placeholder="Ваша почта для ответа?">
+                <input class="feedback-form__input" type="email" id="feedback-user-mail" name="mail" placeholder="Ваша почта для ответа?">
               </p>
 
               <p class="feedback-form__item">
                 <label for="user-text" class="visually-hidden">Ваше сообщение</label>
-                <textarea id="user-text" name="text" class="feedback-form__area" placeholder="Напишите что-нибудь..."></textarea>
+                <textarea class="feedback-form__area" id="user-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
               </p>
 
-              <button type="submit" class="btn feedback-form__btn">Отправить</button>
+              <button class="btn feedback-form__btn" type="submit">Отправить</button>
             </form>
           </section>
         </div>
       </div>
-    </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
