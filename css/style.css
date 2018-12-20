@@ -1,12 +1,10 @@
 body {
   margin: 0;
-
   font-family: "Roboto", "Arial", sans-serif;
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
-
   background-color: #849d8f;
 }
 
@@ -19,7 +17,7 @@ img {
   height: auto;
 }
 
-.page-title {
+.main-page__title {
   padding: 0;
   margin: 10px 0;
 }
@@ -54,15 +52,12 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -111,7 +106,6 @@ input[type="radio"].visually-hidden {
   align-items: center;
   padding: 0;
   margin: 0;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
@@ -128,7 +122,6 @@ input[type="radio"].visually-hidden {
 .main-menu__link {
   display: block;
   padding: 7px 15px;
-
   font-weight: 700;
   color: #ffffff;
 }
@@ -136,7 +129,6 @@ input[type="radio"].visually-hidden {
 .main-menu__link--active {
   display: block;
   padding: 7px 15px;
-
   font-weight: 700;
   color: #ffffff;
   background-color: #d07058;
@@ -236,7 +228,6 @@ input[type="radio"].visually-hidden {
   display: none;
   position: absolute;
   right: 0;
-  margin-top: 5px;
   z-index: 2;
   padding: 20px;
   border-radius: 5px;
@@ -258,11 +249,11 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   color: #323232;
+  width: 310px;
+  height: 44px;
   box-sizing: border-box;
   border: 1px solid #c7c6c5;
   border-radius: 5px;
-  width: 310px;
-  height: 44px;
 }
 
 .search__input:hover {
@@ -290,7 +281,6 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
-
   width: 33px;
   height: 33px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -326,7 +316,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   right: 0;
   display: none;
-  margin-top: 5px;
   z-index: 3;
   padding: 20px;
   border: 1px solid transparent;
@@ -357,6 +346,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user__link {
+  display: block;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -376,10 +366,10 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   color: #323232;
-  border: 1px solid #c7c6c5;
-  border-radius: 5px;
   width: 240px;
   height: 44px;
+  border: 1px solid #c7c6c5;
+  border-radius: 5px;
 }
 
 .user__input:hover {
@@ -450,7 +440,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   right: 0;
   display: none;
-  margin-top: 5px;
   z-index: 4;
   padding: 20px;
   width: 540px;
@@ -535,9 +524,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 6px;
   right: 10px;
-  content: '';
   height: 8px;
   width: 1px;
+  content: '';
   background-color: #323232;
 }
 
@@ -559,9 +548,9 @@ input[type="radio"].visually-hidden {
 
 .products-table__close-button {
   position: relative;
-  border: 0;
   width: 15px;
   height: 15px;
+  border: 0;
   background-color: transparent;
   cursor: pointer;
 }
@@ -570,9 +559,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   margin: 0 auto;
   top:0;
-  content: '';
   height: 15px;
   width: 2px;
+  content: '';
   background-color: #868483;
 }
 .products-table__close-button::before {
@@ -755,8 +744,8 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   justify-content: center;
   padding: 0 22px;
-  background-color: #f8f7f4;
   width: auto;
+  background-color: #f8f7f4;
   box-sizing: border-box;
   border-radius: 15px;
 }
@@ -1144,10 +1133,10 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   color: #323232;
-  border: 1px solid #c7c6c5;
-  border-radius: 5px;
   width: 256px;
   height: 44px;
+  border: 1px solid #c7c6c5;
+  border-radius: 5px;
 }
 
 .feedback-form__input:hover {
@@ -1167,11 +1156,11 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   color: #323232;
+  width: 100%;
   min-height: 154px;
   box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid #c7c6c5;
-  width: 100%;
   resize: none;
 }
 
@@ -1249,9 +1238,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   margin: 0 auto;
   top:0;
-  content: '';
   height: 18px;
   width: 2px;
+  content: '';
   background-color: #231f20;
 }
 
