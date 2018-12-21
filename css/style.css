@@ -109,7 +109,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  color: #ffffff; 
+  color: #ffffff;
   list-style: none;
 }
 
@@ -592,7 +592,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
-  
+
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   outline: none;
@@ -735,7 +735,7 @@ input[type="radio"].visually-hidden {
   min-height: 220px;
   border-radius: 15px;
   box-sizing: border-box;
-  background-image: url('../img/mail-background.jpg');  
+  background-image: url('../img/mail-background.jpg');
   background-color: #f8f7f4;
 }
 
@@ -744,7 +744,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   justify-content: center;
   padding: 0 22px;
-  width: auto;
+  width: 100%;
   background-color: #f8f7f4;
   box-sizing: border-box;
   border-radius: 15px;
@@ -766,7 +766,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #d3d3d2;
   margin-right: 10px;
   border-radius: 5px;
-  
+
 }
 
 .subscribe__mail:hover {
@@ -837,15 +837,16 @@ input[type="radio"].visually-hidden {
 
 .tech-info-menu {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding: 0;
-  max-width: 340px;
+  width: 370px;
   list-style: none;
 }
 
 .tech-info-menu__item {
-  min-width: 133px;
+  width: 50%;
 }
 
 .tech-info-menu__link {
@@ -892,9 +893,8 @@ input[type="radio"].visually-hidden {
 
 /* Стили копирайта */
 
-.creater-info {
-  display: flex;
-  flex-direction: column;
+.creater-info__link {
+  display: block;
 }
 
 .creater-info__copyright {
@@ -1269,15 +1269,6 @@ input[type="radio"].visually-hidden {
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes fallDown {
-  0% {
-    transform: translateY(-1000px);
-  }
-  100% {
-    transform: translateY(0px);
   }
 }
 
