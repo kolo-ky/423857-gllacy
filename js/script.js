@@ -1,7 +1,7 @@
 /* Скрипт появления/скрытия попапа формы обратной связи */
 
 (function () {
-  var openFeedbackBtn = document.querySelector('.show-popup-form');
+  var openFeedbackBtn = document.querySelector('.btn--callback');
 
   if (!openFeedbackBtn) {
     return;
@@ -39,6 +39,8 @@
     if (!userName.value || !mail.value || !text.value) {
       evt.preventDefault();
 
+      popupContainer.classList.remove('popup__container--error');
+      popupContainer.offsetWidth = popupContainer.offsetWidth;
       popupContainer.classList.add('popup__container--error');
     } else {
       popupContainer.classList.remove('popup__container--error');

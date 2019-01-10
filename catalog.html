@@ -79,7 +79,7 @@
           <div class="user">
             <ul class="user__menu">
               <li class="user__menu-item">
-                <a href="#" class="user__menu-link">
+                <a href="login.html" class="user__menu-link">
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -226,12 +226,13 @@
       </nav>
 
       <p class="contacts">
-          <span>С 10 до 20, ежедневно</span><br>
+          <span class="contacts__work-time">С 10 до 20, ежедневно</span>
           <a href="tel:+78124502525" class="contacts__phone"><b>8 812 450-25-25</b></a>
       </p>
     </header>
 
     <main class="container main-page">
+
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-list__item">
           <a href="index.html" class="breadcrumbs-list__link">Главная</a>
@@ -249,7 +250,100 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Здесь будет форма-->
+
+        <form class="filter-form" id="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-form__item">
+            <legend class="filter-form__title">Сортировка:</legend>
+            <select class="filter-form__sort" name="sort">
+              <option value="pop">по популярности</option>
+              <option value="expensive">сначала недорогие</option>
+              <option value="cheap">сначала дорогие</option>
+              <option value="fatcontent">по жирности</option>
+            </select>
+            <span class="filter-form__sort-icon"></span>
+          </fieldset>
+          <fieldset class="filter-form__item">
+            <legend class="filter-form__title">
+              Цена:
+              <span class="filter-form__price-label">
+                  <output class="catalog__lower-cost" name="lower-cost">100 руб.</output> –
+                  <output class="catalog__upper-cost" name="upper-cost">500 руб.</output>
+                </span>
+            </legend>
+            <div class="filter-form__price-range">
+              От
+              <input type="text" name="min-price" value="100" pattern="[0-9]*"> до
+              <input type="text" name="max-price" value="500" pattern="[0-9]*">
+              <div class="filter-form__price-control">
+                <div class="filter-form__range-scale">
+                  <div class="filter-form__range-bar"></div>
+                </div>
+                <div class="filter-form__range-toggle  filter-form__range-toggle--min"></div>
+                <div class="filter-form__range-toggle  filter-form__range-toggle--max"></div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__item">
+            <legend class="filter-form__title">Жирность:</legend>
+            <ul class="filter-form__fatcontent">
+              <li class="filter-form__fatcontent-item">
+                <label class="filter-form__radio-control">
+                  <input type="radio" name="fatcontent" value="0">
+                  <span class="filter-form__radio-icon"></span>
+                  <span class="filter-form__radio-label">0%</span>
+                </label>
+              </li>
+              <li class="filter-form__fatcontent-item">
+                <label class="filter-form__radio-control">
+                  <input type="radio" name="fatcontent" value="b10" checked="" disabled="">
+                  <span class="filter-form__radio-icon"></span>
+                  <span class="filter-form__radio-label">до 10%</span>
+                </label>
+              </li>
+              <li class="filter-form__fatcontent-item">
+                <label class="filter-form__radio-control">
+                  <input type="radio" name="fatcontent" value="b30" disabled="">
+                  <span class="filter-form__radio-icon"></span>
+                  <span class="filter-form__radio-label">до 30%</span>
+                </label>
+              </li>
+              <li class="filter-form__fatcontent-item">
+                <label class="filter-form__radio-control">
+                  <input type="radio" name="fatcontent" value="a30">
+                  <span class="filter-form__radio-icon"></span>
+                  <span class="filter-form__radio-label">выше 30%</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-form__item">
+            <legend class="filter-form__title">Наполнители:</legend>
+            <ul class="filter-form__fillers">
+              <li class="filter-form__fillers-item">
+                <input type="checkbox" id="chocolate" name="filler-chocolate" class="visually-hidden" checked="">
+                <label for="chocolate" class="filter-form__checkbox-control">шоколадные</label>
+              </li>
+              <li class="filter-form__fillers-item">
+                <input type="checkbox" id="sugar" name="filler-sugar" class="visually-hidden" checked="">
+                <label for="sugar" class="filter-form__checkbox-control">сахарные присыпки</label>
+              </li>
+              <li class="filter-form__fillers-item">
+                <input type="checkbox" id="fruit" name="filler-fruit" class="visually-hidden">
+                <label for="fruit" class="filter-form__checkbox-control">фрукты</label>
+              </li>
+              <li class="filter-form__fillers-item">
+                <input type="checkbox" id="syrup" name="filler-syrup" class="visually-hidden">
+                <label for="syrup" class="filter-form__checkbox-control">сиропы</label>
+              </li>
+
+              <li class="filter-form__fillers-item">
+                <input type="checkbox" id="jam" name="filler-jam" class="visually-hidden">
+                <label for="jam" class="filter-form__checkbox-control">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <input class="filter-form__btn" type="submit" value="Применить">
+        </form>
       </section>
 
       <section class="catalog">
@@ -415,6 +509,33 @@
       </section>
     </main>
 
+    <section class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item">
+          <a href="#" class="pagination__link--start"></a>
+        </li>
+
+        <li class="pagination__item pagination__item--current">
+          <a href="#" class="pagination__link">1</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">2</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">3</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">4</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">5</a>
+        </li>
+
+        <li class="pagination__item">
+          <a href="#" class="pagination__link--end"></a>
+        </li>
+      </ul>
+    </section>
     <footer class="main-footer">
 
       <ul class="social-list">
