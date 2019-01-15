@@ -40,6 +40,9 @@ img {
   border: none;
   border-radius: 35px;
   box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.78);
+  box-shadow: 0 2px 2px 0 rgba(160, 32, 11, 0.78);
   outline: none;
 }
 
@@ -47,11 +50,13 @@ img {
 .btn:focus {
   background-color: #ee7561;
   cursor: pointer;
+  background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:active {
   box-shadow: inset 0 2px 2px #942718;
-  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -650,7 +655,7 @@ input[type="radio"].visually-hidden {
 
 
 .container {
-  margin: 20px auto 40px auto;
+  margin: 0 auto 40px auto;
   width: 1200px;
   padding-left:27px;
   padding-right:27px;
@@ -668,7 +673,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   list-style: none;
-  height: 570px;
+  height: 567px;
 }
 
 .slider__item {
@@ -689,7 +694,7 @@ input[type="radio"].visually-hidden {
 
 .slider__item-title {
   position: absolute;
-  top: 255px;
+  top: 253px;
   display: block;
   width: 685px;
   font-size: 60px;
@@ -701,40 +706,27 @@ input[type="radio"].visually-hidden {
 .btn--slider {
   position: absolute;
   z-index: 1;
-  bottom: 45px;
+  bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 32px;
   line-height: 44px;
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.78);
-  box-shadow: 0 2px 2px 0 rgba(160, 32, 11, 0.78);
-}
-
-.btn--slider:hover {
-  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.btn--slider:active {
-  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider__controls {
   position: absolute;
   left: 0;
-  bottom: 54px;
+  bottom: 63px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  width: 80px;
+  width: 77px;
 }
 
 .slider__btn {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -781,7 +773,7 @@ input[type="radio"].visually-hidden {
 }
 
 .offers__item {
-  padding: 19px;
+  padding: 17px;
   width: 560px;
   min-height: 229px;
   box-sizing: border-box;
@@ -803,17 +795,24 @@ input[type="radio"].visually-hidden {
 }
 
 .offers__item-title {
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
 }
 
 .offers__item-description {
-  margin: 0 0 45px 0;
+  margin: 0 0 43px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+}
+
+.btn--offers {
+  padding: 12px 25px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .offers__item .btn {
@@ -823,12 +822,11 @@ input[type="radio"].visually-hidden {
 /* Стили преимуществ */
 
 .advantages {
-  padding: 15px 20px;
+  padding: 20px 20px;
   color: #323232;
   background-color: #ebddc2;
   background-image: url(../img/wafer.png);
   background-size: 100%;
-  background-repeat: no-repeat;
   border-radius: 20px;
 }
 
@@ -851,7 +849,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: flex-start;
   position: relative;
-  padding-top: 10px;
+  padding-top: 9px;
   color: #323232;
   font-size: 16px;
   line-height: 22px;
@@ -894,7 +892,7 @@ input[type="radio"].visually-hidden {
 
 .blog-preview {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 22px;
   width: 560px;
   min-height: 220px;
   background-color: #ffffff;
@@ -913,7 +911,7 @@ input[type="radio"].visually-hidden {
 
 .blog-preview__subtitle {
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
   width: 285px;
   color: #323232;
   font-size: 24px;
@@ -926,7 +924,7 @@ input[type="radio"].visually-hidden {
 
 .subscribe {
   display: flex;
-  padding: 8px;
+  padding: 7px;
   color: #323232;
   width: 560px;
   min-height: 220px;
@@ -957,13 +955,16 @@ input[type="radio"].visually-hidden {
 
 .subscribe__mail {
   padding-left: 15px;
-  width: 348px;
+  width: 365px;
   height: 45px;
   box-sizing: border-box;
   border: 1px solid #d3d3d2;
   margin-right: 10px;
   border-radius: 5px;
+}
 
+.btn-subscribe {
+  padding: 10px 15px 12px 15px;
 }
 
 .subscribe__mail:hover {
@@ -980,14 +981,14 @@ input[type="radio"].visually-hidden {
 
 .social-list {
   display: flex;
-  padding: 0;
+  padding: 0 0 0 30px;
   margin: 0;
   align-items: center;
   list-style: none;
 }
 
 .social-list__item {
-  margin-right: 11px;
+  margin-right: 13px;
 }
 
 .social-list__link {
@@ -1090,8 +1091,11 @@ input[type="radio"].visually-hidden {
 
 
 /* Стили копирайта */
-
+.creater-info {
+  padding-right: 25px;
+}
 .creater-info__link {
+  margin-top: -12px;
   display: block;
 }
 
@@ -1188,7 +1192,7 @@ input[type="radio"].visually-hidden {
 /* Стили хитов продаж */
 
 .bestsellers {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .bestsellers-list {
@@ -1204,7 +1208,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 8px;
   padding-bottom: 20px;
   width: 266px;
   box-sizing: border-box;
@@ -1216,8 +1219,8 @@ input[type="radio"].visually-hidden {
   left: 0;
   top: 0;
   display: block;
-  width: 61px;
-  height: 61px;
+  width: 65px;
+  height: 65px;
   background-image: url(../img/hit.svg);
   content: '';
 }
@@ -1230,8 +1233,8 @@ input[type="radio"].visually-hidden {
 .bestsellers-list__item-price {
   position: absolute;
   margin: 0;
-  top: 200px;
-  left:12px;
+  top: 210px;
+  left:0;
   color: #ffffff;
   font-size: 45px;
   font-weight: 700;
@@ -1498,7 +1501,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info__phone {
-  margin: 0 0 5px 0;
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1513,6 +1516,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn--callback {
+  padding: 10px 15px 12px 15px;
   width: 100%;
 }
 
