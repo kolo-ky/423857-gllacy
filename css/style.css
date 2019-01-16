@@ -682,9 +682,9 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   opacity: 0;
   background: radial-gradient(35% 50%, rgba(255, 255, 255, 0.5), transparent);
@@ -692,10 +692,19 @@ input[type="radio"].visually-hidden {
   transition-duration: .8s;
 }
 
-.slider__item-title {
+.slider__item-image {
   position: absolute;
-  top: 253px;
-  display: block;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.slider__item-title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 35px;
   width: 685px;
   font-size: 60px;
   font-weight: 700;
@@ -704,9 +713,9 @@ input[type="radio"].visually-hidden {
 }
 
 .btn--slider {
-  position: absolute;
-  z-index: 1;
-  bottom: 40px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 32px;
@@ -784,6 +793,7 @@ input[type="radio"].visually-hidden {
   background-color: #d35a76;
   background-image: url(../img/raspberry_background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -791,6 +801,7 @@ input[type="radio"].visually-hidden {
   background-color: #a38c86;
   background-image: url(../img/chocolate_background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -898,6 +909,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
   border-radius: 15px;
 }
 
@@ -1035,16 +1048,13 @@ input[type="radio"].visually-hidden {
 
 .tech-info-menu {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
-  width: 370px;
+  margin: 0;
+  width: 330px;
+  height: 50px;
   list-style: none;
-}
-
-.tech-info-menu__item {
-  width: 50%;
 }
 
 .tech-info-menu__link {
@@ -1430,7 +1440,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 30px 0;
   width: 1200px;
   border-top: 1px solid #cacac7;
 }
