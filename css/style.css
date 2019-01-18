@@ -1223,6 +1223,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 20px;
   width: 266px;
   box-sizing: border-box;
@@ -1238,6 +1239,28 @@ input[type="radio"].visually-hidden {
   height: 65px;
   background-image: url(../img/hit.svg);
   content: '';
+}
+
+.bestsellers-list__item-viewer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+  top: -8px;
+  bottom: 0;
+  padding-bottom: 20px;
+  width: 290px;
+  height: 120%;
+  visibility: hidden;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bestsellers-list__item:hover .bestsellers-list__item-viewer {
+  visibility: visible;
 }
 
 .bestsellers-list__item-image {
@@ -1377,27 +1400,65 @@ input[type="radio"].visually-hidden {
 .pagination {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin: 0 auto 30px auto;
-  padding-right: 75px;
+  padding-right: 28px;
+  box-sizing: border-box;
   width: 1200px;
 }
 
 .pagination__list {
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 1px 0 0 0;
   margin: 0;
   list-style: none;
 }
 
 .pagination__item {
   display: flex;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   width: 27px;
   height: 27px;
   border-radius: 50%;
+}
+
+.pagination__link--start {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  width: 27px;
+  height: 27px;
+  box-sizing: border-box;
+}
+
+.pagination__link--end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30px;
+  height: 27px;
+}
+
+.pagination__link--start::before {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  transform: rotate(-50deg);
+  cursor: default;
+  content: '';
+
+}
+
+.pagination__link--end::before {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  transform: rotate(50deg);
+  content: '';
 }
 
 .pagination__item--current {
@@ -1427,31 +1488,6 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.pagination__link--start::before {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px;
-  width: 8px;
-  height: 8px;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
-  transform: rotate(-50deg);
-  cursor: default;
-  content: '';
-}
-
-.pagination__link--end::before {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-  margin-top: 2px;
-  width: 8px;
-  height: 8px;
-  border-top: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  transform: rotate(50deg);
-  content: '';
-}
 
 /* Стили футера */
 
