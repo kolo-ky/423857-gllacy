@@ -1239,6 +1239,8 @@ select::-ms-expand {
   width: 65px;
   height: 65px;
   background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
   content: '';
 }
 
